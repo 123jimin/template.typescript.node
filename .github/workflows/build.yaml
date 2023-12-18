@@ -15,6 +15,6 @@ jobs:
         run: |
           pnpm install
           pnpm build
-      - name: test
+      - name: Test
         run: |
           pnpm test
