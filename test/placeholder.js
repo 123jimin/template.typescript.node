@@ -1,4 +1,4 @@
-// @ts-check
+//@ts-check
 
 import { assert } from 'chai';
 import { PLACEHOLDER } from "../dist/index.js";
