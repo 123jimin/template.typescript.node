@@ -8,3 +8,8 @@ Use this template for creating a Node.js library written in TypeScript.
 4. Run `pnpm up --latest`.
 5. Start writing code under `src/` directory.
 6. Write tests under `test/` directory.
+
+## TODO
+
+- [ ] Move `test/**/*.js` to `src/**/*.spec.ts`.
+- [ ] Provide a bootstrap script.
