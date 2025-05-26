@@ -1,31 +1,17 @@
 // @ts-check
 
-import js from "@eslint/js";
-import tsPlugin from "@typescript-eslint/eslint-plugin";
-import tsParser from "@typescript-eslint/parser";
+import eslint from "@eslint/js";
+import tseslint from "typescript-eslint";
 
-/** @type { import('eslint').Linter.Config[] } */
-const config = [
+const config = tseslint.config([
     {
         ignores: ["dist/**", "test/**"],
     },
-    js.configs.recommended,
+    eslint.configs.recommended,
+    tseslint.configs.strict,
     {
-        files: ["src/**/*.{js,ts}"],
-        languageOptions: {
-            parser: tsParser,
-            parserOptions: {
-                ecmaVersion: "latest",
-                sourceType: "module",
-            },
-        },
-        plugins: {
-            "@typescript-eslint": /** @type {import('eslint').ESLint.Plugin} */(/** @type{unknown} */(tsPlugin)),
-        },
-        rules: {
-            ...tsPlugin.configs.recommended.rules,
-        },
+        files: ["src/**/*.{ts}"],
     },
-];
+]);
 
 export default config;
