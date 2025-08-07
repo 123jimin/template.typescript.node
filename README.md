@@ -35,3 +35,7 @@ After setting up, you can use the following commands:
   - Don't forget to run `pnpm build` before running tests!
 - `pnpm lint` – run ESLint on the source code.
 - `pnpm clean` – remove the `dist/` directory.
+
+## License
+
+This template is [Unlicensed](./LICENSE).
