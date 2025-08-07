@@ -5,6 +5,10 @@
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "!dist/**/*.spec.*"
+  ],
   "scripts": {
     "clean": "npx rimraf dist",
     "prepare": "npm run build",
