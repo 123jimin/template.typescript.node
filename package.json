@@ -11,10 +11,11 @@
   ],
   "scripts": {
     "clean": "npx rimraf dist",
-    "prepare": "npm run build",
+    "prepare": "pnpm build",
     "build": "npx tsc",
     "build:watch": "npx tsc --watch",
     "lint": "npx eslint src/",
+    "pretest": "pnpm build",
     "test": "npx mocha \"dist/**/*.spec.js\""
   },
   "keywords": [],
