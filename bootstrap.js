@@ -117,15 +117,24 @@ For more information, please refer to <https://unlicense.org>
 function getReadmeText(project_name, project_desc, license) {
     return `# ${project_name}
 
-${project_desc || "No description provided."}
+${project_desc || "(No description provided.)"}
 
 ## Finishing the Setup
 
-1. Check that \`package.json\` and \`LICENSE\` files have been correctly generated.
-2. Run \`pnpm up --latest\`.
-3. Start developing!
+1. Review \`package.json\` and \`LICENSE\` to ensure correctness.
+2. Install dependencies with \`pnpm up --latest\`.
+3. Remove this section.
 
 ## Development
+
+This project uses [pnpm](https://pnpm.io/) for package management.
+
+- \`pnpm build\` – compile TypeScript from \`src/\` into \`dist/\`.
+  - \`pnpm build:watch\` – recompile on every file change.
+- \`pnpm test\` – run unit tests located in \`src/**/*.spec.ts\`.
+  - Don't forget to do \`pnpm build\` before running tests!
+- \`pnpm lint\` – run ESLint on the source code.
+- \`pnpm clean\` – remove the \`dist/\` directory.
 
 ## License
 
