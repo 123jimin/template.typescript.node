@@ -122,7 +122,8 @@ ${project_desc || "(No description provided.)"}
 ## Finishing the Setup
 
 1. Review \`package.json\` and \`LICENSE\` to ensure correctness.
-2. Install dependencies with \`pnpm up --latest\`.
+2. Install dependencies with \`pnpm install\`.
+    - It is recommended to also run \`pnpm up --latest\` to update dependencies to their latest versions.
 3. Remove this section.
 
 ## Development
@@ -155,7 +156,7 @@ async function selfDestruct() {
 }
 
 async function main() {
-    const pkg = /** @type {Record<String, unknown>} */ (JSON.parse(await fs.readFile(path.join(process.cwd(), "package.json"), 'utf-8')));
+    const pkg = /** @type {Record<string, unknown>} */ (JSON.parse(await fs.readFile(path.join(process.cwd(), "package.json"), 'utf-8')));
     if(isBootstrapped(pkg)) {
         globalThis.console.error("This project has already been bootstrapped.");
         process.exit(1);
