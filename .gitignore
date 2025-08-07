@@ -128,3 +128,8 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# pnpm v8-compile-cache dependency
+# - https://github.com/pnpm/pnpm/issues/7330#issuecomment-2708137623
+v8-compile-cache*/
+node-compile-cache/
