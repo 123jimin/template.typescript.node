@@ -181,6 +181,10 @@ async function main() {
         pkg.repository = {type: 'git', url: `git+https://github.com/${github_repo}.git`};
         pkg.bugs = {url: `https://github.com/${github_repo}/issues`};
         pkg.homepage = `https://github.com/${github_repo}`;
+    } else {
+        delete pkg.repository;
+        delete pkg.bugs;
+        delete pkg.homepage;
     }
 
     const year = (new Date()).getFullYear();
