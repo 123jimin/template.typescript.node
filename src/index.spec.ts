@@ -1,7 +1,5 @@
-// @ts-check
-
 import { assert } from 'chai';
-import { PLACEHOLDER } from "../dist/index.js";
+import { PLACEHOLDER } from "./index.js";
 
 describe("PLACEHOLDER", function() {
     it("should be equal to 42", function() {

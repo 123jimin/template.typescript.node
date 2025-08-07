@@ -11,7 +11,7 @@
     "build": "npx tsc",
     "build:watch": "npx tsc --watch",
     "lint": "npx eslint src/",
-    "test": "npx mocha test/**/*.js"
+    "test": "npx mocha \"dist/**/*.spec.js\""
   },
   "keywords": [],
   "author": "placeholder-author",
