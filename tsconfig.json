@@ -38,6 +38,5 @@
         // For type stripping
         "rewriteRelativeImportExtensions": true,
         "erasableSyntaxOnly": true,
-    },
-    "include": ["src/**/*.ts"]
+    }
 }
