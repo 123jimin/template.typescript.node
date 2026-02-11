@@ -11,7 +11,6 @@
         "vuepress",
         "wscript"
     ],
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     "editor.formatOnSave": true,
     "eslint.format.enable": true,
     "prettier.enable": false,
@@ -20,8 +19,5 @@
     },
     "[javascript]": {
         "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-    },
-    "[html]": {
-        "editor.formatOnSave": false
     }
 }
