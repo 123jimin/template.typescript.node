@@ -1,8 +1,8 @@
-import { assert } from 'chai';
-import { PLACEHOLDER } from "./index.ts";
+import {assert} from 'chai';
+import {PLACEHOLDER} from "./index.ts";
 
-describe("PLACEHOLDER", function() {
-    it("should be equal to 42", function() {
+describe("PLACEHOLDER", () => {
+    it("should be equal to 42", () => {
         assert.strictEqual(PLACEHOLDER, 42);
     });
 });

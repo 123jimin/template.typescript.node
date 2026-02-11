@@ -2,6 +2,7 @@
     "cSpell.words": [
         "dotenv",
         "eslintcache",
+        "jiminp",
         "jscoverage",
         "Microbundle",
         "Nuxt",
@@ -9,5 +10,18 @@
         "stylelintcache",
         "vuepress",
         "wscript"
-    ]
+    ],
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.formatOnSave": true,
+    "eslint.format.enable": true,
+    "prettier.enable": false,
+    "[typescript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[html]": {
+        "editor.formatOnSave": false
+    }
 }
