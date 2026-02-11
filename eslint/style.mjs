@@ -53,6 +53,7 @@ const rules = {
 
     // Misc.
     "@stylistic/max-statements-per-line": ["error", {max: 2}],
+    "@typescript-eslint/no-unused-vars": ["error", {varsIgnorePattern: "^_", argsIgnorePattern: "^_"}],
 };
 
 /** @type {import('eslint').Linter.Config[]} */

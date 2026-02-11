@@ -23,11 +23,4 @@ export default defineConfig(
     tseslint.configs.recommended,
     local_strict,
     local_style,
-    {
-        // Miscellaneous configs
-        name: "jiminp/misc",
-        rules: {
-            "@typescript-eslint/no-unused-vars": ["error", {varsIgnorePattern: "^_", argsIgnorePattern: "^_"}],
-        },
-    },
 );
