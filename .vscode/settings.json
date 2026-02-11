@@ -11,6 +11,7 @@
         "vuepress",
         "wscript"
     ],
+    "files.eol": "\n",
     "editor.formatOnSave": true,
     "eslint.format.enable": true,
     "prettier.enable": false,
