@@ -11,8 +11,7 @@
             "ESNext"
         ],
         "types": [
-            "node",
-            "mocha"
+            "node"
         ],
         // Other Outputs
         "sourceMap": true,

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-//@ts-check
+// @ts-check
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
@@ -12,11 +12,11 @@ import {fileURLToPath} from 'node:url';
  * @returns {boolean} True if the project has already been bootstrapped.
  */
 function isBootstrapped(pkg) {
-  return pkg.name !== 'placeholder-name' || pkg.author !== 'placeholder-author';
+    return pkg.name !== 'placeholder-name' || pkg.author !== 'placeholder-author';
 }
 
 /**
- * @param {string} message 
+ * @param {string} message
  * @returns {void}
  */
 function print(message) {
@@ -29,7 +29,9 @@ function print(message) {
  * @returns {Promise<string>} User input.
  */
 function ask(rl, query) {
-  return new Promise(resolve => rl.question(query, resolve));
+    return new Promise((resolve) => {
+        rl.question(query, resolve);
+    });
 }
 
 /**
@@ -39,9 +41,9 @@ function ask(rl, query) {
  * @returns {string|null}
  */
 function getLicenseText(type, author, year) {
-  switch (type.trim().toLowerCase()) {
-    case 'mit':
-      return `MIT License
+    switch(type.trim().toLowerCase()) {
+        case 'mit':
+            return `MIT License
 
 Copyright (c) ${year} ${author}
 
@@ -63,8 +65,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 `;
-    case 'wtfpl':
-      return `            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+        case 'wtfpl':
+            return `            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
                     Version 2, December 2004
 
  Copyright (C) ${year} ${author}
@@ -78,8 +80,8 @@ SOFTWARE.
 
   0. You just DO WHAT THE FUCK YOU WANT TO.
   `;
-    case 'unlicense':
-      return `This is free and unencumbered software released into the public domain.
+        case 'unlicense':
+            return `This is free and unencumbered software released into the public domain.
 
 Anyone is free to copy, modify, publish, use, compile, sell, or
 distribute this software, either in source code form or as a compiled
@@ -104,15 +106,15 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <https://unlicense.org>
 `;
-    default:
-        return null;
-  }
+        default:
+            return null;
+    }
 }
 
 /**
- * @param {string} project_name 
+ * @param {string} project_name
  * @param {string} project_desc
- * @param {string} license 
+ * @param {string} license
  */
 function getReadmeText(project_name, project_desc, license) {
     return `# ${project_name}
@@ -144,8 +146,8 @@ This project uses [pnpm](https://pnpm.io/) for package management.
 }
 
 /**
- * @param {string} file_name 
- * @param {string} contents 
+ * @param {string} file_name
+ * @param {string} contents
  */
 async function writeFile(file_name, contents) {
     await fs.writeFile(path.join(process.cwd(), file_name), contents, 'utf-8');
@@ -204,7 +206,7 @@ async function main() {
         selfDestruct(),
     ]);
 
-    print("\nBootstrap complete. Follow additional instructions in README.md!")
+    print("\nBootstrap complete. Follow additional instructions in README.md!");
 }
 
 main().catch((err) => globalThis.console.error(err));

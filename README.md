@@ -6,7 +6,7 @@ A minimal starting point for building a Node.js library in TypeScript.
 
 - Compile with [TypeScript](https://www.typescriptlang.org/).
 - Lint with [ESLint](https://eslint.org/).
-- Test with [Mocha](https://mochajs.org/) + [Chai](https://www.chaijs.com/).
+- Test with [Node.js Test Runner](https://nodejs.org/api/test.html).
 - GitHub CI for continuous integration.
 - Manage dependencies with [pnpm](https://pnpm.io/).
 
