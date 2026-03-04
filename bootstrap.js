@@ -203,8 +203,9 @@ async function main() {
         writeFile("LICENSE", license_text),
         writeFile("README.md", readme_text),
         writeFile("package.json", JSON.stringify(pkg, null, 2) + "\n"),
-        selfDestruct(),
     ]);
+
+    await selfDestruct();
 
     print("\nBootstrap complete. Follow additional instructions in README.md!");
 }
