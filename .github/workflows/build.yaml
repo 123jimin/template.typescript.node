@@ -12,10 +12,9 @@ jobs:
         with:
           version: 10.24
           run_install: true
+      - name: Lint
+        run: pnpm lint
       - name: Build
-        run: |
-          pnpm install
-          pnpm build
+        run: pnpm build
       - name: Test
-        run: |
-          pnpm test
+        run: pnpm test
