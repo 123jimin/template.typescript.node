@@ -33,7 +33,7 @@
     "@eslint/js": "^10.0.1",
     "@jiminp/eslint-config": "^1.2.0",
     "@stylistic/eslint-plugin": "^5.9.0",
-    "@types/node": "^25.3.3",
+    "@types/node": "^25.4.0",
     "eslint": "^10.0.2",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "rimraf": "^6.1.3",
