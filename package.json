@@ -32,7 +32,7 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@jiminp/eslint-config": "^1.2.0",
-    "@stylistic/eslint-plugin": "^5.9.0",
+    "@stylistic/eslint-plugin": "^5.10.0",
     "@types/node": "^25.5.0",
     "eslint": "^10.0.2",
     "eslint-plugin-simple-import-sort": "^12.1.1",
