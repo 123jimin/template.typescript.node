@@ -34,10 +34,10 @@
     "@jiminp/eslint-config": "^1.2.0",
     "@stylistic/eslint-plugin": "^5.10.0",
     "@types/node": "^25.5.0",
-    "eslint": "^10.0.2",
+    "eslint": "^10.1.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "rimraf": "^6.1.3",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.56.1"
+    "typescript": "^6.0.2",
+    "typescript-eslint": "^8.57.2"
   }
 }
